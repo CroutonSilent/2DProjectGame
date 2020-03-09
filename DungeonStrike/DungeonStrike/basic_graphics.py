@@ -3,9 +3,7 @@ _module = 'basic_graphics.py version 0.1.3'
 # basic_graphics.py for standard Python (and not for browser-based brython)
 # by David Kosbie
 # version 0.1.3
-#edited by Aidan Freeman
 #custom version 0.0.1
-
 import inspect
 from types import SimpleNamespace
 from tkinter import *
@@ -54,6 +52,17 @@ def run(*args, title=None, width=400, height=400, drawFn=None):
             state.width, state.height = newWidth, newHeight
             updateTitle()
             deferredRedrawAll()
+    def undraw(self):
+
+        """Undraw the object (i.e. hide it). Returns silently if the
+        object is not currently drawn."""
+        
+        if not self.canvas: return
+        self.canvas.delete(self.id)
+        self.canvas = None
+        self.id = None
+        _root.update()
+
     root.bind('<Configure>', lambda event: sizeChangedWrapper(event))
     updateTitle()
     deferredRedrawAll()

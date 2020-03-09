@@ -24,7 +24,13 @@
     <Compile Include="basic_graphics.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="credits.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DungeonStrike.py" />
+    <Compile Include="Map1.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
