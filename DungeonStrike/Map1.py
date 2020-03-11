@@ -10,6 +10,7 @@ def draw(canvas, width, height):
     path = canvas.create_rectangle(0,450,1366,650, fill= 'dimGrey')
     path2 = canvas.create_rectangle(0,450,150,118, fill = 'dimGrey')
     path3 = canvas.create_rectangle(150, 118, 1366, 400, fill ='dimGrey')
+    path4 = canvas.create_rectangle(340, 400, 940, 450, fill = 'dimGrey')
     pathLine1 = canvas.create_line(50, 450, 50, 650, fill='white', width = 3)
     pathLine2 = canvas.create_line(100, 450, 100, 650, fill='white', width = 3)
     pathLine3 = canvas.create_line(150, 450, 150, 650, fill='white', width = 3)
