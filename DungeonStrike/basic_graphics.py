@@ -13,6 +13,7 @@ def draw(canvas, width, height):
     canvas.create_rectangle(10, 10, width-10, height-10,
                             fill='lightGreen', width=5, outline='green')
     canvas.create_text(width/2, height/2, text=message, font='Arial 20 bold')
+    
 
 def run(*args, title=None, width=400, height=400, drawFn=None):
     state = SimpleNamespace()

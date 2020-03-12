@@ -6,11 +6,12 @@ import math
 def draw(canvas, width, height):
     #test = canvas.create_rectangle(0,0,1366,768, fill='mediumSlateBlue')
     #map background
-    mapback = canvas.create_rectangle(0,0,1366,768, fill= 'grey')
+    mapback = canvas.create_rectangle(0,0,1366,768, fill= 'lightGreen')
     path = canvas.create_rectangle(0,450,1366,650, fill= 'dimGrey')
     path2 = canvas.create_rectangle(0,450,150,118, fill = 'dimGrey')
     path3 = canvas.create_rectangle(150, 118, 1366, 400, fill ='dimGrey')
     path4 = canvas.create_rectangle(340, 400, 940, 450, fill = 'dimGrey')
+    path5 = canvas.create_rectangle(1130, 400, 1366, 450, fill = 'dimGrey')
     pathLine1 = canvas.create_line(50, 450, 50, 650, fill='white', width = 3)
     pathLine2 = canvas.create_line(100, 450, 100, 650, fill='white', width = 3)
     pathLine3 = canvas.create_line(150, 450, 150, 650, fill='white', width = 3)
@@ -72,6 +73,22 @@ def draw(canvas, width, height):
     pathLine50 = canvas.create_line(1200, 118, 1200, 400, fill='white', width = 3)
     pathLine51 = canvas.create_line(1250, 118, 1250, 400, fill='white', width = 3)
     pathLine52 = canvas.create_line(1300, 118, 1300, 400, fill='white', width = 3)
+    pathLine53 = canvas.create_line(400, 400, 400, 450, fill = 'white', width = 3)
+    pathLine54 = canvas.create_line(450, 400, 450, 450, fill='white', width = 3)
+    pathLine55 = canvas.create_line(500, 400, 500, 450, fill='white', width = 3)
+    pathLine56 = canvas.create_line(550, 400, 550, 450, fill='white', width = 3)
+    pathLine57 = canvas.create_line(600, 400, 600, 450, fill='white', width = 3)
+    pathLine58 = canvas.create_line(650, 400, 650, 450, fill='white', width = 3)
+    pathLine59 = canvas.create_line(700, 400, 700, 450, fill='white', width = 3)
+    pathLine60 = canvas.create_line(750, 400, 750, 450, fill='white', width = 3)
+    pathLine61 = canvas.create_line(800, 400, 800, 450, fill='white', width = 3)
+    pathLine62 = canvas.create_line(850, 400, 850, 450, fill='white', width = 3)
+    pathLine63 = canvas.create_line(900, 400, 900, 450, fill = 'white', width = 3)
+    pathLine64 = canvas.create_line(1150, 400, 1150, 450, fill = 'white', width = 3)
+    pathLine65 = canvas.create_line(1200, 400, 1200, 450, fill = 'white', width = 3)
+    pathLine66 = canvas.create_line(1250, 400, 1250, 450, fill = 'white', width = 3)
+    pathLine67 = canvas.create_line(1300, 400, 1300, 450, fill = 'white', width = 3)
+    pathLine68 = canvas.create_line(350, 400, 350, 450, fill = 'white', width = 3)
 
     #CT Spawn Boxes
     boxct1 = canvas.create_rectangle(1300,650, 1340, 690, fill ='burlyWood')
@@ -112,6 +129,8 @@ def draw(canvas, width, height):
     #Map Name
     mapLabel = canvas.create_text(1250, 40, text = 'Aim_Test', fill = 'white', font = f'Arial {24} bold')
 
+    #Client Version
+    versionLabel1 = canvas.create_text(1290, 690, text = 'Client Version 0.0.6', fill = 'white', font = f'Arial {10} bold')
 
 
 
